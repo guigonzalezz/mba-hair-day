@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="./src/assets/scissors.svg" />
+
+  <title>Hair Day</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
+
+    <form class="form">
+      <header>
+        <h1>Schedule an Appointment</h1>
+        <p>
+          Select date, time and enter the client's name to create the
+          appointment
+        </p>
+      </header>
+
+      <label for="date" class="label">Date</label>
+      <div class="input">
+        <i><img src="./src/assets/calendar.svg" alt="Calendar" /></i>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <span class="label">Times</span>
+      <ul id="hours" class="hours" aria-label="Available times in the morning">
+      </ul>
+
+      <label for="client" class="label">Client</label>
+      <div class="input">
+        <i><img src="./src/assets/person.svg" alt="Person" /></i>
+        <input type="text" id="client" name="client" placeholder="Client's name" required />
+      </div>
+
+      <button type="submit" class="button">Schedule</button>
+    </form>
+
+    <aside class="schedule">
+      <header>
+        <h1>Appointments</h1>
+        <p>View the appointments according to the selected day</p>
+      </header>
+
+      <section class="schedule-period">
+        <header>
+          <img src="./src/assets/morning.svg" alt="Morning" />
+          <strong>Morning</strong>
+          <span>09h-12h</span>
+        </header>
+        <ul id="period-morning" class="period">
+        </ul>
+      </section>
+
+      <section class="schedule-period">
+        <header>
+          <img src="./src/assets/afternoon.svg" alt="Afternoon" />
+          <strong>Afternoon</strong>
+          <span>13h-18h</span>
+        </header>
+        <ul id="period-afternoon" class="period">
+        </ul>
+      </section>
+
+      <section class="schedule-period">
+        <header>
+          <img src="./src/assets/night.svg" alt="Night" />
+          <strong>Night</strong>
+          <span>19h-21h</span>
+        </header>
+        <ul id="period-night" class="period">
+        </ul>
+      </section>
+    </aside>
+  </div>
+</body>
+
+</html>
