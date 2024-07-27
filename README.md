@@ -1,4 +1,4 @@
-<img width="100%"  src="./assets/Capa_LinkedIn.png" alt="Background Rockeseat">
+<img width="100%"  src="./src/assets/Capa_LinkedIn.png" alt="Background Rockeseat">
 <div align="center">
   <h1>Hair Day  </h1>
   <h2>MBA - FullStack</h2>
@@ -15,7 +15,7 @@
 - Webpack
 
 
-<img width="100%"  src="./assets/Cover.png" alt="Project">
+<img width="100%"  src="./src/assets/Cover.png" alt="Project">
 
 ### How to run
 
